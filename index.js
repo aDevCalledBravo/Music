@@ -9,7 +9,7 @@ const userRoutes = require('./routes/users.js');
 const app = express();
 
 // Link to mongoDB atlas
-const dbURI = dbURI;
+// const dbURI = dbURI;
 mongoose.connect(dbURI, {
 	useNewUrlParser: true,
 	useUnifiedTopology: true,
