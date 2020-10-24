@@ -4,9 +4,11 @@ const morgan = require('morgan');
 const mongoose = require('mongoose');
 const dbURI = require('./config/db.js');
 const userRoutes = require('./routes/users.js');
+const generalRoutes = require('./routes/general.js');
 
 // Initiate the app
 const app = express();
+app.listen(3000);
 
 // Link to mongoDB atlas
 // const dbURI = dbURI;
@@ -30,3 +32,4 @@ app.use(express.static('public'));
 app.use(morgan('dev'));
 
 app.use('/', userRoutes);
+app.use('/', generalRoutes);

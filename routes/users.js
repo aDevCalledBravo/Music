@@ -9,9 +9,4 @@ router.get('/register', register);
 
 router.get('/logout', logout);
 
-router.get('/', (req, res) => {
-	res.sendFile(__dirname + 'views/signup.html');
-});
-
-
 module.exports = router;
