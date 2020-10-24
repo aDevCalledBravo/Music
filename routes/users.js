@@ -9,5 +9,9 @@ router.get('/register', register);
 
 router.get('/logout', logout);
 
+router.get('/', (req, res) => {
+	res.send('Welcome');
+});
+
 
 module.exports = router;
