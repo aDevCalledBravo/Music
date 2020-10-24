@@ -10,7 +10,7 @@ router.get('/register', register);
 router.get('/logout', logout);
 
 router.get('/', (req, res) => {
-	res.send('Welcome');
+	res.sendFile(__dirname + 'views/signup.html');
 });
 
 
