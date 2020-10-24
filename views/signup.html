@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width = device-width, initial-scale = 1">
+	<title>Signup | XMusic</title>
+	<link rel="stylesheet" type="text/css" href="../public/css/signup.css">
+	<link rel="stylesheet" type="text/css" href="../public/css/navbar.css">
+</head>
+<body>
+	<nav>
+		<h2>XMusic</h2>
+		<p id="menu-icon">&#9776;</p>
+		<p id="close-icon">&#10006;</p>
+		<ul>
+			<a href="#"><li>Home</li></a>
+			<a href="#"><li>About</li></a>
+			<a href="#"><li>Login/Signup</li></a>
+			<a href="#"><li>Contact</li></a>
+		</ul>
+	</nav>
+
+	<section class="container">
+		<h1>Signup</h1>
+		<form>
+			<label for="name">Name*</label>
+			<input type="text" id="name" name="name" placeholder="Your Full Name e.g. John Doe" required>
+
+			<label for="username">Username*</label>
+			<input type="text" id="username" name="username" placeholder="What would you like to be called?" required>
+
+			<label for="email">Email Address*</label>
+			<input type="email" id="email" name="email" placeholder="johndoe@email.com"pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+
+			<label for="password">Password*</label>
+			<input type="password" id="password" name="password" placeholder="8 characters or more" required minlength="8">
+
+			<label for="repassword">Confirm Password*</label>
+			<input type="password" id="repassword" name="repassword" placeholder="Psst... What you typed before" required minlength="8" autocomplete="new-password">
+
+			<input type="checkbox" name="terms" id="terms" required="">
+			<label for="terms">I have read and agree to the <a href="#">Terms of Use</a> and <a href="#">Privacy Conditions</a>*</label>
+			<br>
+			<input type="checkbox" name="subscribe" id="subscribe">
+			<label for="subscribe">I agree to receive Monthly Marketing tips and recommendations via Email</label>
+			<input type="submit" name="submit" value="Signup">
+		</form>
+	</section>
+
+	<script>
+		let ul = document.querySelector("ul");
+		let menuIcon = document.querySelector("#menu-icon");
+		let closeIcon = document.querySelector("#close-icon");
+
+		menuIcon.addEventListener("click", toggleMenuList);
+		closeIcon.addEventListener("click", closeMenuList);
+
+		function toggleMenuList() {
+			ul.style.height = "100%";
+			menuIcon.style.display = "none";
+			closeIcon.style.display = "block";
+		}
+
+		function closeMenuList() {
+			ul.style.height = "0";
+			menuIcon.style.display = "block";
+			closeIcon.style.display = "none";
+		}
+
+	</script>
+</body>
+</html>
