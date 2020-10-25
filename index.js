@@ -7,7 +7,6 @@ const routes = require('./routes/web.js');
 
 // Initiate the app
 const app = express();
-app.listen(3000);
 
 // Link to mongoDB atlas
 // const dbURI = dbURI;
