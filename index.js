@@ -28,6 +28,6 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
 // Using morgan to log instead
-app.use(morgan('dev'));
+// app.use(morgan('dev'));
 
 app.use('/', routes);
