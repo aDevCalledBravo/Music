@@ -3,7 +3,7 @@ const express = require('express');
 const morgan = require('morgan');
 const mongoose = require('mongoose');
 const dbURI = require('./config/db.js');
-const userRoutes = require('./routes/users.js');
+const routes = require('./routes/web.js');
 
 // Initiate the app
 const app = express();
@@ -29,4 +29,4 @@ app.use(express.static('public'));
 // Using morgan to log instead
 app.use(morgan('dev'));
 
-app.use('/', userRoutes);
+app.use('/', routes);

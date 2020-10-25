@@ -4,7 +4,7 @@
 
 */
 const register = (req, res) => {
-	res.render('register');
+	res.render('signup');
 };
 
 const logout = (req, res) => {

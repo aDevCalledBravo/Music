@@ -4,13 +4,15 @@
 
 */
 const index = (req, res) => {
-	return view('index');
+	res.render('index');
 };
 
 const about = (req, res) => {
-	return view('about')
+	res.render('about')
 };
 
 const contact = (req, res) => {
-	return view('contact')
+	res.render('contact')
 };
+
+module.exports = { index, about, contact };
