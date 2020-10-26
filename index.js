@@ -5,6 +5,7 @@ const mongoose = require('mongoose');
 const dbURI = require('./config/db.js');
 const userRoutes = require('./routes/users.js');
 const { createError } = require('http');
+const routes = require('./routes/web.js');
 
 // Initiate the app
 const app = express();
