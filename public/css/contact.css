@@ -1,8 +1,11 @@
+/* general */
 body {padding: 0;
       margin: 0;
 }
 .container {margin: 0 15%;
 }
+
+/* header styles */
 header {display: flex;
         margin: 0 15%;
 }
@@ -24,6 +27,8 @@ nav ul li {font-family: 'Courier New', Courier, monospace;
            font-size: 20px;
            margin-top: 20px;
 }
+
+/* section one main container */
 .section-one {background-image: url(/images/EKDZMd.jpg);
               height: 80vh;
               background-position: center;
@@ -31,6 +36,7 @@ nav ul li {font-family: 'Courier New', Courier, monospace;
               background-size: cover;
               width: 100%;
 }
+/* section one content container - overlay */
 .section-one .content {width: 100%;
                        height: 100%;
                        background-color: rgba(0, 0, 0, 0.7);
@@ -57,11 +63,15 @@ nav ul li {font-family: 'Courier New', Courier, monospace;
                               font-size: 18px;
 }
 
+/* section-two */
 #head {text-align: center;
 }
-.section-two {display: flex;}
+.section-two {display: flex;
+}
+/* section two both child divs */
 .section-two .part {flex: 1;
 }
+/* section two form inputs */
 .section-two input,
 .section-two textarea  {margin-top: 10px;
                           width: 80%;
@@ -79,6 +89,8 @@ nav ul li {font-family: 'Courier New', Courier, monospace;
              background-color: lightblue;
              border-radius: 50px;
 }
+
+/* section two part two */
 .section-two h2 {color: lightblue;
                    font-weight: bold;
 }
@@ -112,6 +124,7 @@ nav ul li {font-family: 'Courier New', Courier, monospace;
                                             color: white;
 }
 
+/* section three */
 .section-three .header h2 {text-align: center;
                            font-size: 36px;
                            color: pink;
@@ -127,18 +140,24 @@ nav ul li {font-family: 'Courier New', Courier, monospace;
 }
 .section-three .header h2::after {margin: 23px 40px;
 }
+/* map div */
 #map {height: 400px;
       width: 100%;
 }
 
 
-
+/* size for small laptops */
 @media(max-width: 1350px) {
+    /* general */
     nav {flex: 2;
     }
     nav ul li {font-size: 18px;
                margin-top: 25px;
     }
+    /* section two */
+    .section-two #socialMedia-icons {width: 70%;
+    }
+    /* section three */
     .section-three .header h2::before, 
     .section-three .header h2::after {width: 300px;
     }
@@ -146,13 +165,14 @@ nav ul li {font-family: 'Courier New', Courier, monospace;
     }
     .section-three .header h2::after {margin: 23px 30px;
     }
-    .section-two #socialMedia-icons {width: 70%;
-    }
 }
 
+/* size for small tablets */
 @media(max-width: 875px) {
+    /* general */
     header, .container {margin: 0 5%;
     }
+    /* section one */
     .section-one {height: 60vh;
     }
     .section-one .content h1 {font-size: 64px;
@@ -164,10 +184,12 @@ nav ul li {font-family: 'Courier New', Courier, monospace;
     }
     .section-one .content button {margin-top: unset;
     }
+    /* section two */
     .section-two #socialMedia-icons {width: 70%;
     }
     .section-two p {font-size: 14px;
     }
+    /* section three */
     .section-three .header h2::before, 
     .section-three .header h2::after {width: 200px;
     }
@@ -181,12 +203,15 @@ nav ul li {font-family: 'Courier New', Courier, monospace;
     }
 }
 
+/* size for small mobile */
 @media(max-width: 625px) {
-    .section-one .content h1 {padding-top: 25%;
-    }
+    /* general */
     header {margin: -10px 5%;
     }
     nav {display: none;
+    }
+    /* section one */
+    .section-one .content h1 {padding-top: 25%;
     }
     .section-one .content h1 {font-size: 40px;
     }
@@ -198,8 +223,10 @@ nav ul li {font-family: 'Courier New', Courier, monospace;
                                   height: 35px;
                                   font-size: 14px;
     }
+    /* section two */
     .section-two {flex-wrap: wrap;
     }
+    /* section three */
     .section-three .header h2 {font-size: 24px;
     }
     .section-three .header h2::before, 
