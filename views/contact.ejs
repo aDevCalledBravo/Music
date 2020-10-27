@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Contact</title>
+    <link rel="stylesheet" href="/css/contact.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1><span>X</span>Music</h1>
+        </div>
+        <nav>
+            <ul>
+                <li>HOME</li>
+                <li>ABOUT</li>
+                <li>BLOG</li>
+                <li>EXPLORE</li>
+                <li>CONTACT</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- section one -->
+        <section class="section section-one">
+            <!-- content div with overlay -->
+            <div class="content">
+                <h1>Upload all Songs</h1>
+                <p>
+                    Never leave any song offline. Upload all.
+                    Any upload issues and <br> all others can be 
+                    submitted  through the contact form
+                </p>
+                <button>Contact Us</button>
+            </div>
+        </section>
+
+        <!-- section two -->
+        <h1 id="head">Contact Form</h1>
+        <section class="section container section-two">
+            <!-- part one, section two  -->
+            <div class="part part-one">
+                <form action="">
+                    <label for="fname">Name:</label> <br>
+                    <input type="text" placeholder="Enter your full name" id="fname" name="fname"> <br><br>
+                    <label for="mail">Email:</label> <br>
+                    <input type="text" placeholder="What's your email" id="mail" name="mail"> <br><br>
+                    <label for="msg">Message:</label> <br>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Drop your message here" id="msg" name="msg"></textarea> <br> 
+                    <input type="submit" value="Submit" id="submit-btn">
+                </form>
+            </div>
+            <!-- part two, section two  -->
+            <div class="part part-two">
+                <h2>XMusic</h2>
+                <p>
+                    24, Lorem ipsum dolor sit amet consectetur adipisicing <br>
+                    elit. Ratione, deleniti. Velit, quam cum corrupti dolo
+                </p>
+                <ul id="contact-icons">
+                    <li><i class="fa fa-phone" aria-hidden="true"></i> 08163667372</li>
+                    <li><i class="fa fa-envelope" aria-hidden="true"></i> xmusicsupload.com</li>
+                </ul>
+                <h2>Socialize with us</h2>
+                <ul id="socialMedia-icons">
+                    <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-telegram" aria-hidden="true"></i></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- section three - map -->
+        <section class="section section-three">
+            <div class="header">
+                <h2>Locate Us <i class="fa fa-globe" aria-hidden="true"></i> </h2>
+            </div>
+            <div id="map">
+
+            </div>
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
+
+    <script>
+        function initMap() {
+            var options = {
+                zoom: 8,
+                center:{lat: 6.5157, lng: 3.3899}
+            }
+            var map = new google.maps.Map(document.getElementById('map'), options);
+        }
+    </script>
+    <script defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB05PhHGPdCjkgj6oFaKZXQNRZbJyzWENQ&callback=initMap">
+    </script>
+</body>
+</html>
